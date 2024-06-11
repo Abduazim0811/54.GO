@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "./genproto/example";
+
+message Request {
+  string message = 1;
+}
+
+message Response {
+  string message = 1;
+}
