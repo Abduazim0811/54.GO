@@ -16,7 +16,7 @@ func main() {
         log.Fatalf("Failed to marshal request: %v", err)
     }
 
-    resp, err := http.Post("http://localhost:8080/hash", "application/octet-stream", bytes.NewBuffer(reqData))
+    resp, err := http.Post("http://localhost:7777/hash", "application/octet-stream", bytes.NewBuffer(reqData))
     if err != nil {
         log.Fatalf("Failed to make request: %v", err)
     }
